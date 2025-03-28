@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smooth Scallywag Art Gallery</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+    <style>
+      body {
+        min-height: 100vh;
+        background-image: url('website-bg-draft.png');
+        overflow: scroll;
+      }
+      .art-header {
+        display: flex;
+        background-color: #f4efe3;
+        border-radius: 5px;
+        border: 3px solid #d4be90;
+        width: 175px;
+        height: 50px;
+        margin: 10px;
+        position: relative;
+      }
+      .art-header h1 {
+        font-size: 25px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-30%);
+        width: 100%;
+        text-align: center;
+      }
+      .art-sub {
+        box-sizing: border-box;
+        background-color: #f4efe3;
+        border-radius: 5px;
+        border: 3px solid #d4be90;
+        width: 200px;
+        height: 30px;
+        margin: 10px;
+        position: relative;
+      }
+      .art-sub p {
+        position: absolute
+        top: 50%;
+        transform: translateY(50%);
+        text-align: center;
+      }
+      
+      .home-button {
+        text-align: center;
+        background-color: #f4efe3;
+        border-radius: 5px;
+        border: 3px solid #d4be90;
+        width: 100px;
+        height: 43px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 10px;
+        padding: 3px;
+      }
+      
+      .gallery {
+        border: 3px solid #f4efe3;
+        border-radius: 5px;
+        margin: 5px;
+      }
+      
+      .gallery:hover {
+        border: 3px solid #d4be90;
+        border-radius: 5px;
+      }
+      
+      .gallery img {
+        width: 100%;
+        height: auto;
+      }
+      
+      .desc {
+        font-family: 'Summer Pixel';
+        padding: 10px;
+        text-align: center;
+        background-color: #f4efe3;
+      }
+      
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      
+      .responsive {
+        padding: 0 6px;
+        float: left;
+        width: 24.99999%;
+      }
+      
+      @media only screen and (max-width: 700px) {
+        .responsive {
+          width: 49.99999%;
+          margin: 6px 0;
+        }
+      }
+      
+      @media only screen and (max-width: 500px) {
+        .responsive {
+          width: 100%;
+        }
+      }
+      
+      .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      @font-face {
+        font-family: 'Summer Pixel';
+        src: url('summer-pixel-22-font/SummerPixel22Regular-jE0W7.ttf');
+      }
+      p {
+        font-family: 'Summer Pixel';
+      }
+      h1 {
+        font-family: 'Summer Pixel';
+      }
+    </style>
+    <div class="art-header">
+      <h1>Art Gallery</h1>
+    </div>
+    <div class="art-sub">
+      <p>Here you can find my art.</p>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="nature_bridge.png">
+          <img src="nature_bridge.png" alt="Drawing of a bridge with overgrown nature taking it over" width="438.5" height="310">
+        </a>
+        <div class="desc">I followed <a href="https://youtu.be/-_L1zSeFlCQ?si=_wOuGTV8jJ29lp7X">this</a> tutorial on youtube to draw this picture, I really enjoy watching the tutorials on this channel and I can recommend following along if you want to practice digital art.</div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="nature_bridge.png">
+          <img src="sunset_pixels.png" alt="Pixel art of a sunset behind mountains" width="310" height="310">
+        </a>
+        <div class="desc">This is my first pixel art drawing. I wanted to start simple so I drew a sunset, then removed the sun and added mountains at the bottom instead. I really like the pink in the sky, it is my favourite part of sunsets.</div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  <div class="home-button">
+    <a href="https://smoothscallywag.neocities.org/"><img src="Smooth Scallywag button.png" width="88" height="31"></a>
+  </div>
+  </body>
+</html>
